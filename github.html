@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
+        <script src="github.js"></script>
+    </head>
+    <body ng-app="GitHubApp">
+        <h1>GitHub Application</h1>
+        <section ng-controller="GitHubUserController">
+            <input type="text" ng-model="user_name">
+            <button ng-click="add()">Add</button>
+            <ul>
+                <user></user>
+               <!--<li ng-repeat="user in users">
+                 <p>{{user.user_name}}</p>
+                 <img ng-src="{{user.pic}}">
+                 <p>LastMonth: {{ user.monthly }}</p>
+                 <p>LastWeek:{{ user.weekly }}</p>
+                </li>-->
+            </ul>
+        </section>
+       
+       
+        
+    </body>
+</html>
